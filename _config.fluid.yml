@@ -1,0 +1,60 @@
+# =============================================
+#  Fluid 主题核心配置
+#  已配置：站点信息、导航、首页Banner、关于页、社交图标、暗色模式
+# =============================================
+
+# 全局语言
+language: zh-CN
+
+# 导航栏
+navbar:
+  blog_title: 锦云知夏的博客
+  menu:
+    - { key: '首页', link: '/', icon: 'iconfont icon-home-fill' }
+    - { key: '归档', link: '/archives/', icon: 'iconfont icon-archive-fill' }
+    - { key: '分类', link: '/categories/', icon: 'iconfont icon-category-fill' }
+    - { key: '标签', link: '/tags/', icon: 'iconfont icon-tags-fill' }
+    - { key: '关于', link: '/about/', icon: 'iconfont icon-user-fill' }
+
+# 首页 Banner
+index:
+  banner_img: /img/banner.webp      # 首页大图（WebP格式）
+  banner_img_height: 100            # 100=全屏，调低可露出更多内容
+  slogan:
+    enable: true
+    text: '她掌管月之彼端，你调度世上万物'
+
+# 关于页
+about:
+  avatar: /img/avatar.jpg
+  name: 锦云知夏_Glimpse
+  bio: '星月姬计划发起人 · 锦星越工作室'
+  icons:
+    - { class: 'iconfont icon-github-fill', link: 'https://github.com/wuhuang2', tip: 'GitHub' }
+    - { class: 'iconfont icon-bilibili-fill', link: 'https://space.bilibili.com/3546734730938563', tip: 'B站' }
+    - { class: 'iconfont icon-qq-fill', link: 'https://user.qzone.qq.com/3690841006', tip: 'QQ' }
+
+# 页脚
+footer:
+  content: '
+    <a href="https://jytq.top" target="_blank">锦云天堑工作室</a> &amp;
+    <a href="https://github.com/wuhuang2" target="_blank">锦云知夏_Glimpse</a>
+    <br>搭载 <a href="https://hexo.io" target="_blank">Hexo</a> 主题 <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank">Fluid</a>
+  '
+
+# 暗色模式
+dark_mode:
+  enable: true
+  default: auto                    # auto=跟随系统，light=始终亮色，dark=始终暗色
+
+# 文章页
+post:
+  toc:
+    enable: true                    # 开启文章目录
+  date_format: 'YYYY-MM-DD'
+
+# 代码高亮
+highlight:
+  enable: true
+  line_num: false
+  copy_btn: true
