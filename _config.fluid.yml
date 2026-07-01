@@ -18,11 +18,17 @@ navbar:
 
 # 首页 Banner
 index:
-  banner_img: /img/banner.webp      # 首页大图（WebP格式）
-  banner_img_height: 100            # 100=全屏，调低可露出更多内容
+  banner_img: /img/banner.webp
+  banner_img_height: 100
   slogan:
     enable: true
-    text: '她掌管月之彼端，你调度世上万物'
+    text:
+      - '她掌管月之彼端，你调度世上万物'
+      - '调度，为了无需调度的万物。'
+      - '呦呦鹿鸣，食野之苹。'
+      - '风起，吹去。'
+      - '月照大地，星河滚烫。'
+      - '愿你我如星河般璀璨。'
 
 # 关于页
 about:
@@ -37,9 +43,9 @@ about:
 # 页脚
 footer:
   content: '
-    <a href="https://jytq.top" target="_blank">锦云天堑工作室</a> &amp;
-    <a href="https://github.com/wuhuang2" target="_blank">锦云知夏_Glimpse</a>
-    <br>搭载 <a href="https://hexo.io" target="_blank">Hexo</a> 主题 <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank">Fluid</a>
+    <p>© 2024-2026 <a href="https://jytq.top">锦云知夏_Glimpse</a>. 保留所有权利。</p>
+    <p>本站原创内容采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。</p>
+    <p><a href="https://hexo.io" target="_blank">Hexo</a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank">Fluid</a></p>
   '
 
 # 暗色模式
@@ -52,9 +58,22 @@ post:
   toc:
     enable: true                    # 开启文章目录
   date_format: 'YYYY-MM-DD'
+  copyright:
+    enable: true                    # 改为 true 开启
+    license: 'BY-NC-SA'             # 许可协议类型
+    author:
+      enable: true                  # 显示作者
+    post_date:
+      enable: true                  # 显示发布日期
+      format: "LL"
+    update_date:
+      enable: false                 # 是否显示更新日期
+      format: "LL"
 
 # 代码高亮
 highlight:
   enable: true
   line_num: false
   copy_btn: true
+
+tab_title_separator: " · "
